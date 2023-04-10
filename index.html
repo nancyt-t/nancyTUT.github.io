@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>项目测试</title>
+		<link rel="icon" href="img/logo.ico" type="images/x-ico" />
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				text-decoration: none;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			.back {
+				width: 100%;
+				height: 2300px;
+				border: 0px;
+				background-image: url("img/12.jpg");
+				background-size: cover;
+				background-attachment: fixed;
+				/*设置背景图片不随滚动条滚动*/
+				background-repeat: no-repeat;
+			}
+
+			#ul li {
+				list-style-type: none;
+				/*去掉项目符号的，比如你用了<ul><li></li><li></li></ul>默认的li里边的字是有列表符号的，小圆点。这个list-style-type: none就是不要列表符号*/
+				clear: both;
+				width: 100px;
+				display: inline;
+				/*li {display: inline} 让 li 不再独占一行, 宽度上只会得到必要的而不是占有所在容器的全宽*/
+				font-size: larger;
+				margin-left: 150px;
+			}
+
+			a:link {
+				color: black;
+			}
+
+			a:hover {
+				color: black;
+			}
+
+			a:active {
+				color: black;
+			}
+
+			a:visited {
+				color: black;
+			}
+
+			.banner {
+				width: 1915px;
+				height: 30px;
+				border: 1px;
+				background-color: lightcyan;
+				position: fixed;
+				z-index: 1;
+			}
+
+			.navigation {
+				width: 240px;
+				height: 364px;
+				border: 1px;
+				position: absolute;
+				top: 30%;
+				left: 10%;
+				float: left;
+				/* 浮动 */
+				border-radius: 13px 13px 13px 13px;
+			}
+
+			.title {
+				width: 240px;
+				height: 138px;
+				border: 0px;
+				border-radius: 13px 13px 0px 0px;
+				background-color: lavenderblush;
+			}
+
+			#ul2 {
+				list-style-type: none;
+				font-size: larger;
+				margin-left: 0px;
+				line-height: 50px;
+				background-color: aliceblue;
+
+			}
+
+			.jz {
+				font-size: 1.8em;
+				vertical-align: middle;
+				/* 垂直对齐 */
+				position: absolute;
+				top: 20%;
+				transform: translateY(-50%);
+				width: 100%;
+				left: 0
+			}
+
+			.my {
+				width: 240px;
+				height: 364px;
+				border: 1px solid black;
+				float: left;
+				/* //浮动 */
+				border-radius: 13px 13px 13px 13px;
+				position: absolute;
+				top: 70%;
+				left: 10%;
+				background-color: azure;
+			}
+
+			#icon {
+				width: 25px;
+				height: 25px;
+			}
+
+			#pic {
+				width: 25px;
+				height: 25px;
+				float: left;
+				position: absolute;
+				left: 580px;
+			}
+
+			#shuoshuo {
+				width: 25px;
+				height: 25px;
+				float: left;
+				position: absolute;
+				left: 390px;
+			}
+
+			#tool {
+				width: 25px;
+				height: 25px;
+				float: left;
+				position: absolute;
+				left: 800px;
+			}
+
+			#more {
+				width: 25px;
+				height: 25px;
+				float: left;
+				position: absolute;
+				left: 990px;
+			}
+
+			#head {
+				background-image: url("img/头像.jpg");
+				width: 100px;
+				height: 100px;
+				margin: auto;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color: rgba(127, 127, 127, 0.1);
+				margin-top: 50px;
+				border-radius: 50%;
+			}
+
+			.h4 {
+				font-family: 'Times New Roman', Times, serif;
+				font-size: 30px;
+				text-align: center;
+				line-height: 80px;
+			}
+
+			.bottom {
+				width: 100%;
+				height: 300px;
+				border: 1px solid white;
+				background-image: url("img/logo2.png");
+				background-repeat: no-repeat;
+				background-size: 300px;
+
+			}
+
+			#ul3 {
+				position: absolute;
+				left: 30%;
+				list-style-type: none;
+				display: inline;
+				line-height: 50px;
+				font-size: 26px;
+			}
+
+			.go {
+				width: 80px;
+				height: 80px;
+				background-color: white;
+				border-radius: 12px;
+				position: fixed;
+				bottom: 100px;
+				right: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 18px;
+				box-shadow: 0 0 15px -3px rgb(0 0 0 / 10%);
+				cursor: pointer;
+				user-select: none;
+			}
+
+			.con {
+				width: 33px;
+				height: 33px;
+			}
+			
+		</style>
+
+	<body>
+		<div >
+		<div class="back" id="top">
+			<div class="banner">
+				<ul id="ul">
+					<li>南希的小破站</li>
+					<a href="#">
+						<li><img src="img/41说说.png" / id="shuoshuo">说说</li>
+					</a>
+					<a href="say.html">
+						<li><img src="img/留言板.png" id="pic" />留言板</li>
+					</a>
+					<a href="#">
+						<li><img src="img/工具.png" id="tool" />工具</li>
+					</a>
+					<a href="other.html">
+						<li><img src="img/其他.png" id="more" />其他</li>
+					</a>
+				</ul>
+			</div>
+			<div class="jz">
+				<h3 style="text-align: center;">Nancyの博客</h3>
+			</div>
+			<div>
+				<div class="navigation">
+					<div class="title">
+						<h2 style="text-align: center; line-height: 50px;">Nancyのblog</h2>
+						<h4 style="text-align: center;">你所热爱的<br />就是你的生活</h4>
+					</div>
+					<div>
+						<ul id="ul2">
+							<a href="frieng.html">
+								<li><img src="img/链接.png" id="icon">友情链接</li>
+							</a>
+							<a href="say.html">
+								<li><img src="img/留言板.png" id="icon" />留言板</li>
+							</a>
+							<a href="outin.html">
+								<li><img src="img/登录.png" id="icon" />登录</li>
+							</a>
+							<a href="index.html">
+								<li><img src="img/主页.png" id="icon" />主页</li>
+							</a>
+						</ul>
+					</div>
+				</div>
+				<div class="my">
+					<div id="head"></div>
+					<h4 class="h4">Nancy</h4>
+					<h3 style="text-align: center;">La Pluma天下第一</h3>
+				</div>
+			</div>
+
+		</div>
+		<div class="bottom">
+			<ul id="ul3">
+				<a href="https://github.com/nancyt-t">
+					<li><img src="img/Github.png" class="con" />github</li>
+				</a>
+				<a href="https://space.bilibili.com/131650496?spm_id_from=333.1007.0.0">
+					<li><img src="img/bilibili.png" class="con">bilibili</li>
+				</a>
+			</ul>
+		</div>
+		<a href="#top">
+			<div class="go">返回</div>
+		</a>
+		</div>
+	</body>
+</html>
