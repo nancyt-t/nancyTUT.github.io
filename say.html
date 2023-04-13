@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>项目测试</title>
+		<title>想说的话</title>
+		
 		<link  rel="icon" href="img/logo.ico" type="images/x-ico"/>
+		
 		<style>
 			
 			*{
@@ -198,24 +200,48 @@
 				width: 500px;
 				height: 300px;
 				position: absolute;
-				left: 25%;
+				left: 20%;
 				top: 25%;
+				font-size: 30px;
 			}
+			button{
+				width: 200px;
+				height: 50px;
+				position: absolute;
+				top: 70%;
+				left: 35%;
+			}
+			.typed-out{
+			    overflow: hidden;
+			    border-right: 0em solid orange;
+			    white-space: nowrap;
+			    font-size:3.6rem;
+			    width: 0;
+			    animation: 
+			      typing 1s steps(30, end) forwards,
+			      blink 3.5s infinite;
+				}
+			
+			    @keyframes typing {
+			      from { width: 0 }
+			      to { width: 100% }
+			    }
 			</style>
 
 	<body>
+		
 	    <div class="back" id="top">
 			<div class="banner">
 			<ul id="ul">
 				<li>南希的小破站</li>
-				<a href="#"><li><img src="img/41说说.png"/ id="shuoshuo">说说</li></a>
-				<a href="#"><li><img src="img/留言板.png" id="pic"/>留言板</li></a>
+				<a href="shuoshuo.html"><li><img src="img/41说说.png"/ id="shuoshuo">说说</li></a>
+				<a href="say.html"><li><img src="img/留言板.png" id="pic"/>留言板</li></a>
 				<a href="#"><li><img src="img/工具.png" id="tool"/>工具</li></a>
 				<a href="other.html"><li><img src="img/其他.png" id="more"/>其他</li></a>
 			</ul>
 			</div>
-			<div class="jz">
-				<h3 style="text-align: center;">Nancyの博客</h3>
+			<div class="jz container">
+				<div class="typed-out" style="text-align: center ;">Nancyの博客</div>
 			</div>
 			<div>
 				<div class="navigation">
@@ -239,10 +265,11 @@
 				</div>
 			</div>
 			<div class="say">
-				<h1 style="text-align: center;">留言板（挖坑）</h1>
 				<form>
+				<h1 style="text-align: center;">留言板（挖坑）</h1>
 					<textarea  class="k" style="resize:none;"> </textarea>
-					<input type="submit">
+					<button>提交</button>
+					<ul></ul>
 				</form>
 			</div>
 		</div>
