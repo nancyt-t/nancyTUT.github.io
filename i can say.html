@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>其他</title>
+		<title>主页</title>
 		<link rel="icon" href="img/logo.ico" type="images/x-ico" />
 		<style>
-			* {
+			*{
 				padding: 0;
 				margin: 0;
 				text-decoration: none;
@@ -18,14 +18,13 @@
 
 			.back {
 				width: 100%;
-				height: 1500px;
+				height: 2300px;
 				border: 0px;
 				background-image: url("img/12.jpg");
 				background-size: cover;
 				background-attachment: fixed;
 				/*设置背景图片不随滚动条滚动*/
 				background-repeat: no-repeat;
-
 			}
 
 			#ul li {
@@ -163,7 +162,7 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-color: rgba(127, 127, 127, 0.1);
-				</h5>margin-top: 50px;
+				margin-top: 50px;
 				border-radius: 50%;
 			}
 
@@ -214,17 +213,9 @@
 				width: 33px;
 				height: 33px;
 			}
-
-			.mz {
-				width: 900px;
-				height: 790px;
-				border: 1px;
-				position: absolute;
-				top: 30%;
-				left: 30%;
-				background-color: rgba(125, 125, 125, 0.5);
-				color: white;
-			}
+			.container{
+			      display: inline-block;
+			    }
 			.typed-out{
 			    overflow: hidden;
 			    border-right: 0em solid orange;
@@ -235,14 +226,19 @@
 			      typing 1s steps(30, end) forwards,
 			      blink 3.5s infinite;
 				}
-			
+
 			    @keyframes typing {
 			      from { width: 0 }
 			      to { width: 100% }
 			    }
+				
+				
+
+			
 		</style>
 
 	<body>
+		<div >
 		<div class="back" id="top">
 			<div class="banner">
 				<ul id="ul">
@@ -253,7 +249,7 @@
 					<a href="message.html">
 						<li><img src="img/留言板.png" id="pic" />留言板</li>
 					</a>
-					<a href="tool.html">
+					<a href="#">
 						<li><img src="img/工具.png" id="tool" />工具</li>
 					</a>
 					<a href="other.html">
@@ -293,36 +289,7 @@
 					<h3 style="text-align: center;">La Pluma天下第一</h3>
 				</div>
 			</div>
-			<div class="mz" >
-				<h1 style="text-align: center;">服务条款<待更新></h1>
-				<h5 style="text-align: center;">by：nancy</h5>
-				<h2>服务条款</h2>
-				<p style="font-size: 20px; text-indent: 2em;">欢迎光临我的网站，请好好阅读以下注意事项</p>
-				<h2>使用服务</h2>
-				<ul style="text-indent: 2em; list-style-type:none; font-size: 20px;">
-					<li>1 请勿滥用</li>
-					<li>2 请勿违反任何法律行为，否则后果自负</li>
-				</ul>
-				<h2>发布言论（待实现）</h2>
-				<ul style="text-indent: 2em; list-style-type:none; font-size: 1.25rem;/">
-					<li>您可以发布任何言论但不包括建政、暴力等敏感言论</li>
-					<li>待更新</li>
-				</ul>
-				<h2>工具服务</h2>
-				<ul style="text-indent: 2em; list-style-type:none; font-size: 1.25rem;/">
-					<li>本网站使用的工具均来自网络，均已跳转官网，请勿盗用。</li>
-					<li>未经明示授权许可，用户不得进行修改、出租、散布或衍生其他作品。</li>
-				</ul>
-				<h2>关于本条款</h2>
-				<P style="font-size: 20px; text-indent: 2em; ">我们可以修改上述条款或任何适用于某项服务的附加条款。
-					我们会在本网页上公布这些条款的修改通知。我们会在适用的服务中公布附加条款的修改通知。
-					所有修改的适用不具有追溯力，且会在公布十四天或更长时间后方始生效。
-					但是，对服务新功能的特别修改或由于法律原因所作的修改将立即生效。如果您不同意服务的修改条款，应停止使用服务。
-					如果本条款与附加条款有冲突，以附加条款为准。
-					本条款约束阿付的小破站与您之间的关系，且不创设任何第三方受益权。
-					如果您不遵守本条款，且我们未立即采取行动，并不意味我们放弃我们可能享有的任何权利。
-					如果某一条款不能被强制执行，这不会影响其他条款的效力。</P>
-			</div>
+
 		</div>
 		<div class="bottom">
 			<ul id="ul3">
@@ -337,5 +304,6 @@
 		<a href="#top">
 			<div class="go">返回</div>
 		</a>
+		</div>
 	</body>
 </html>
